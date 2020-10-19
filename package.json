@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "lorem-ipsum": "^2.0.3",
-    "sirv-cli": "^1.0.7"
+    "sirv-cli": "^1.0.8"
   }
 }
