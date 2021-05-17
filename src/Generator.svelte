@@ -1,5 +1,5 @@
 <script>
-    import { LoremIpsum } from 'lorem-ipsum';
+    const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
