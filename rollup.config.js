@@ -16,14 +16,12 @@ export default {
 	},
 	plugins: [
 		svelte({
-			// enable run-time checks when not in production
-			dev: !production,
-			// we'll extract any component CSS out into
-			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
+			compilerOptions: {
+				// enable run-time checks when not in production
+				dev: !production,
 			}
 		}),
+		css({ output: 'bundle.css', sourceMap: true }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
@@ -34,11 +32,7 @@ export default {
 			browser: true,
 			dedupe: ['svelte']
 		}),
-		commonjs({
-			namedExports: {
-				'lorem-ipsum': ['LoremIpsum']
-			  }
-		}),
+		commonjs(),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
