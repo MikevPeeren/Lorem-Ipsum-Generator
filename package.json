@@ -19,7 +19,7 @@
     "svelte": "^3.38.2"
   },
   "dependencies": {
-    "gh-pages": "^3.2.1",
+    "gh-pages": "^3.2.2",
     "lorem-ipsum": "^2.0.3",
     "sirv-cli": "^1.0.12"
   }
