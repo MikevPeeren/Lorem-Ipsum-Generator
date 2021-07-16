@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d public/"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.2",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
     "rollup": "^2.53.2",
